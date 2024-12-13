@@ -3,7 +3,7 @@ import './DetailFooter.css'
 
 export const DetailFooter=()=> {
     return (
-        <div>
+        <div className='Footer'>
         <div className='Footer-section'>
             <h4> Funiro.</h4>
             <address>
