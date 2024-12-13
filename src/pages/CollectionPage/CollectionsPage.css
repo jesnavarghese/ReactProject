@@ -1,32 +1,23 @@
-.collections-page {
+  .collections-page {
+  font-family: Arial, sans-serif;
     padding: 20px;
     text-align: center;
-    background-color: #ffffff; /* White background */
-  }
+    background-color: #FAF3EA; /* White background */
+   } 
   
-  .collection-items {
+  .collection-page h1 {
     display: flex;
     justify-content: center;
     gap: 20px;
     margin-top: 20px;
   }
   
-  .collection-item {
-    padding: 10px 15px;
-    border: 1px solid #ddd;
-    border-radius: 8px;
-    background-color: #f9fafb;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  }
   
-  .collection-item h3 {
+  .collection-page h3 {
     font-size: 1.4rem;
     color: #333;
     margin-bottom: 10px;
   }
   
-  .collection-item p {
-    font-size: 1rem;
-    color: #555;
-  }
   
+   
