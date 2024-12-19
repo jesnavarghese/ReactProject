@@ -1,4 +1,4 @@
-// import airpods from '../../Images/airpods.jpg'
+import airpods from '../../Images/airpods.jpg'
 
 export const products = [
     {
@@ -6,7 +6,7 @@ export const products = [
       name: "Wireless Earbuds, IPX8",
       price: 89.0,
       description: "Organic Cotton, fairtrade certified",
-      image:"https://via.placeholder.com/150" ,
+      image:airpods ,
       rating: 5,
     },
     {
