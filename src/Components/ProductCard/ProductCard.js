@@ -9,7 +9,7 @@ export const ProductCard = ({ product }) => {
       <img className="product-image" src={product.image} alt={product.name} />
       <h3>{product.name}</h3>
       <p>{product.description}</p>
-      <h4>Rp {product.price.toFixed(2)}</h4>
+      <h4>Rp {product.price.toFixed(3)}</h4>
       
        
     </div>
