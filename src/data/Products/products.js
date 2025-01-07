@@ -1,6 +1,8 @@
 import  image1 from '../../Images/image1.jpg'
 import  image2 from '../../Images/image2.jpg'
 import  image3 from '../../Images/image3.jpg'
+import  image4 from '../../Images/image4.jpg'
+
 
 
 
@@ -31,10 +33,10 @@ export const products = [
     },
     {
       id: 4,
-      name: "Sytherine",
+      name: "Respira",
       price: 2500.000,
-      description: "Stylish Cafe Chair",
-      image:image1 ,
+      description: "Outdoor bar table and stool",
+      image:image4 ,
       rating: 3,
     },
     {
@@ -42,7 +44,7 @@ export const products = [
         name: "Leviosa",
         price: 2500.000,
         description: "Stylish Cafe Chair",
-        image: image2,
+        image: image1,
         rating: 4
       },
       {
@@ -50,7 +52,7 @@ export const products = [
         name: "Lolito",
         price: 7000.0,
         description: "Luxury big sofa",
-        image:image3  ,
+        image:image2  ,
         rating: 4.5
       },
       {
@@ -58,15 +60,15 @@ export const products = [
         name: "Sytherine",
         price: 2500.000,
         description: "Stylish Cafe Chair",
-        image: image1,
+        image: image3,
         rating: 4.2
       },
       {
         id: 8,
-        name: "Leviosa",
+        name: "Respira",
         price: 2500.000,
-        description: "Stylish Cafe Chair",
-        image: image2,
+        description: "Outdoor bar table and stool",
+        image: image4,
         rating: 4.3
       }
       
