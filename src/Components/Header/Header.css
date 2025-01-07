@@ -2,15 +2,26 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 10px 20px;
-    background-color: #f8f9fa;
-    border-bottom: 1px solid #ddd;
+    padding: 20px 40px;
+    background-color: #fff;
+    
   }
   
-  .logo {
-    font-size: 24px;
-    font-weight: bold;
+  .logo  {
+    font-size: 34px;
+    font-weight: 700;
     color: #333;
+    display: flex;
+    align-items: flex-end;
+    gap : 4px;
+    line-height: 28px;
+
+    
+  }
+
+  .logo img {
+    height: 32px;
+    width: 50px;
   }
   
   nav ul {
@@ -19,10 +30,11 @@
     align-items: center;
     padding: 0;
     margin: 0;
+    gap : 60px;
   }
   
   nav li {
-    margin: 0 15px; /* Adds spacing between list items */
+       
     font-size: 16px;
     color: #555;
     cursor: pointer;
@@ -30,5 +42,11 @@
   
   nav li:hover {
     color: #007bff; /* Changes color on hover for better interactivity */
+  }
+  
+  .icons {
+    gap: 40px;
+    display: flex;
+    align-items: center;
   }
   

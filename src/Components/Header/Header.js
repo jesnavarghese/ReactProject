@@ -1,10 +1,15 @@
 import React from "react";
 import "./Header.css";
+import Logo from "../Images/Logo.png"
+import {IconeHome} from "../Icons/IconHome"
+import {IconSearch} from "../Icons/IconSearch"
+import {IconList} from "../Icons/IconList"
+import {IconCart} from "../Icons/IconCart"
 
 export const Header = () => {
   return (
     <header className="header">
-      <div className="logo">Shopcart</div>
+      <div className="logo"> <img src= {Logo} /> Funiro</div>
       <nav>
         <ul>
           <li>Home</li>
@@ -13,6 +18,12 @@ export const Header = () => {
           <li>Contact</li>
         </ul>
       </nav>
+      <div className="icons">
+      <IconeHome />
+      <IconSearch /> 
+      <IconList />   
+      <IconCart />
+      </div>
     </header>
   );
 };

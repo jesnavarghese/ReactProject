@@ -5,7 +5,7 @@ export const CollectionsPage = () => {
   return (
     <div className="collections-page">
       <h1>Shop</h1>
-       <h3>Home : Shop </h3>
+       <h3>Home &gt; Shop </h3>
         </div>
         
   );
