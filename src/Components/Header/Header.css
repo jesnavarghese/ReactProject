@@ -24,24 +24,32 @@
     width: 50px;
   }
   
-  nav ul {
+  .header  ul {
     display: flex; 
     list-style: none; 
     align-items: center;
     padding: 0;
     margin: 0;
     gap : 60px;
+    text-decoration: none; 
+      
+            
   }
   
-  nav li {
+  .header  li{
        
     font-size: 16px;
     color: #555;
     cursor: pointer;
+    text-decoration: none; 
+    font-weight: bold; 
+    color: black;  
+    
   }
   
   nav li:hover {
     color: #007bff; 
+    
   }
   
   .icons {

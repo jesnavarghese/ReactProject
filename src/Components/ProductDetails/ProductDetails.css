@@ -1,6 +1,7 @@
 .product-page {
     
     background-color: #f9f9f9;
+   
   }
   
   .product-list {
@@ -8,7 +9,7 @@
     grid-template-columns: repeat(auto-fill,225px);
     gap: 20px; 
     justify-content: center;
-    margin: 60px 0;    
+    margin: 60px 0;   
     
   }
   
