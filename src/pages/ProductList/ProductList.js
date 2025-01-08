@@ -3,6 +3,7 @@ import {products} from '../../data/Products'
 import {ProductCard} from '../../Components/ProductCard'
 import {CollectionsPage} from '../../Components/CollectionPage'
 import {DeliveryDetails} from '../../Components/DeliveryDetails'
+import './ProductList.css'
 
 
 
