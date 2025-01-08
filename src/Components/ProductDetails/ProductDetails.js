@@ -1,7 +1,7 @@
 import React from "react";
 import { useParams } from "react-router-dom";
-import {products} from '../../data/Products';
-import './ProductDetails.css'
+import { products } from "../../data/Products/products";
+import "./ProductDetails.css";
 
 export const ProductDetails = () => {
   const { id } = useParams();
@@ -19,7 +19,6 @@ export const ProductDetails = () => {
     alert(`${product.name}! is added to Cart`);
   };
 
-
   return (
     <div className="product-details">
       <img src={product.image} alt={product.name} />
@@ -31,4 +30,3 @@ export const ProductDetails = () => {
     </div>
   );
 };
-
