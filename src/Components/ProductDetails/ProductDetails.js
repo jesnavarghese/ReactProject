@@ -1,11 +1,23 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
-import { products } from "../../data/Products/products";
+// import { products } from "../../data/Products/products";
 import "./ProductDetails.css";
+import axios from "axios";
 
 export const ProductDetails = () => {
   const { id } = useParams();
-  const product = products.find((p) => p.id === parseInt(id));
+  const [product, setProduct] = useState();
+  async function getProductUsingId() {
+    try {
+      const response = await axios.get(`http://localhost:8000/products/${id}`);
+      setProduct(response.data);
+    } catch (error) {
+      console.log(error);
+    }
+  }
+  useEffect(() => {
+    getProductUsingId();
+  }, []);
 
   if (!product) {
     return <h2>Product not found!</h2>;
