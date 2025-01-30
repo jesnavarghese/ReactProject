@@ -79,6 +79,14 @@ export const UpdateProduct = () => {
           onChange={handleChange}
         />
 
+        <input
+          type="number"
+          name="rating"
+          placeholder="product rating"
+          value={product.rating}
+          onChange={handleChange}
+        />
+
         <button type="submit">Update Product</button>
       </form>
     </div>

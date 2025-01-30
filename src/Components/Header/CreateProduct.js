@@ -23,9 +23,12 @@ export const CreateProduct = () => {
         rating: parseFloat(newproduct.rating),
       });
       alert(`product "${response.data.product.name}" added successfully`);
-      navigate("/");
+      navigate("/shop");
     } catch (error) {
       console.error("Error adding product", error);
+      alert(
+        `Failed to add product: ${error.response?.data?.error || error.message}`
+      );
     }
   }
   return (
@@ -35,7 +38,7 @@ export const CreateProduct = () => {
         <input
           type="number"
           placeholder="product ID"
-          value={newproduct.id}
+          value={newproduct.id || ""}
           onChange={(e) => setNewproduct({ ...newproduct, id: e.target.value })}
           required
         />
@@ -54,7 +57,7 @@ export const CreateProduct = () => {
           type="number"
           step="0.01"
           placeholder="product price"
-          value={newproduct.price}
+          value={newproduct.price || ""}
           onChange={(e) =>
             setNewproduct({ ...newproduct, price: e.target.value })
           }
@@ -78,13 +81,12 @@ export const CreateProduct = () => {
           onChange={(e) =>
             setNewproduct({ ...newproduct, image: e.target.value })
           }
-          
         />
 
         <input
           type="number"
           placeholder="product rating"
-          value={newproduct.rating}
+          value={newproduct.rating || ""}
           onChange={(e) =>
             setNewproduct({ ...newproduct, rating: e.target.value })
           }
