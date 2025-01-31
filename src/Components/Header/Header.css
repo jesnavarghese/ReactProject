@@ -58,13 +58,4 @@
     align-items: center;
   }
   
-  .create-product-form {
-    position: absolute;
-    top: 60px;
-    right: 70px;
-    background-color: white;
-    border: 10px solid #ccc;
-    padding: 10px;
-    border-radius: 5px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  }
+ 

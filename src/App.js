@@ -6,8 +6,8 @@ import { ProductList } from "./pages/ProductList";
 import "./App.css";
 import { DetailFooter } from "./Components/DetailFooter";
 import { ProductDetails } from "./Components/ProductDetails";
-import { CreateProduct } from "./Components/Header/CreateProduct";
-import { UpdateProduct } from "./Components/ProductDetails/Updateproduct";
+import { CreateProduct } from "./Components/CreateProduct/CreateProduct";
+import { UpdateProduct } from "./Components/Updateproduct/Updateproduct";
 
 function App() {
   return (

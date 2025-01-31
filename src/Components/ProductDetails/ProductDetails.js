@@ -3,7 +3,7 @@ import { useParams, useNavigate } from "react-router-dom";
 // import { products } from "../../data/Products/products";
 import "./ProductDetails.css";
 import axios from "axios";
-import { deleteProduct } from "./ProductService";
+import { deleteProduct } from "../../apis/ProductService";
 
 export const ProductDetails = () => {
   const { id } = useParams();
@@ -25,13 +25,13 @@ export const ProductDetails = () => {
     return <h2>Product not found!</h2>;
   }
 
-  const handleBuyNow = () => {
-    alert(`Thank you for purchasing ${product.name}!`);
-  };
+  // const handleBuyNow = () => {
+  //   alert(`Thank you for purchasing ${product.name}!`);
+  // };
 
-  const handleAddToCart = () => {
-    alert(`${product.name}! is added to Cart`);
-  };
+  // const handleAddToCart = () => {
+  //   alert(`${product.name}! is added to Cart`);
+  // };
 
   async function handleDelete() {
     const confirmDelete = window.confirm(
@@ -53,14 +53,26 @@ export const ProductDetails = () => {
 
   return (
     <div className="product-details">
-      <img src={product.image} alt={product.name} />
+      {product.image ? (
+        <img
+          className="product-detailed-image"
+          src={product.image}
+          alt={product.name}
+        />
+      ) : (
+        <div className="product-placeholder-box">
+          
+        </div>
+      )}
       <h2>{product.name}</h2>
       <p>{product.description}</p>
       <p>${product.price.toFixed(3)}</p>
+      <div className="service-buttons">
       <button onClick={handleUpdate}>Edit</button>
       <button onClick={handleDelete}>Delete</button>
-      <button onClick={handleBuyNow}>Buy Now</button>
-      <button onClick={handleAddToCart}>Add To Cart</button>
+      {/* <button onClick={handleBuyNow}>Buy Now</button>
+      <button onClick={handleAddToCart}>Add To Cart</button> */}
+      </div>
     </div>
   );
 };
