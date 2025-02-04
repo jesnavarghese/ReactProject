@@ -66,7 +66,7 @@ export const ProductDetails = () => {
       )}
       <h2>{product.name}</h2>
       <p>{product.description}</p>
-      <p>${product.price.toFixed(3)}</p>
+      <h4>Rp {product.price.toFixed(3)}</h4>
       <div className="service-buttons">
       <button onClick={handleUpdate}>Edit</button>
       <button onClick={handleDelete}>Delete</button>

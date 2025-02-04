@@ -14,7 +14,7 @@ export const ProductCard = ({ product }) => {
             alt={product.name}
           />
         ) : (
-          <div className= "placeholder-box" />
+          <div className= "placeholder-box" />  
           
         )}
         

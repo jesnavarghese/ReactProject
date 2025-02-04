@@ -2,7 +2,7 @@
   
   
   button {
-    margin: 5px;
+    margin: 10px ;
     padding: 10px 20px;
     background-color: green;
     color: white;
@@ -23,7 +23,7 @@
     align-items: center;
   }
 
-  .product-details h2  {
+  .product-details h2 h4 {
     margin: 10px 0;
 
   }
