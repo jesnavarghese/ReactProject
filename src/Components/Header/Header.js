@@ -8,12 +8,7 @@ import { IconCart } from "../Icons/IconCart";
 import { Link} from "react-router-dom";
 
 export const Header = () => {
-  // const navigate = useNavigate();
-  // const [iscreating, Setiscreating] = useState(false);
-
-  // const handleCreateProductNavigate = () => {
-  //   navigate("/create");
-  // };
+  
   return (
     <header className="header">
       <div className="logo">

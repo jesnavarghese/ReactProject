@@ -21,6 +21,8 @@ export const ProductCard = ({ product }) => {
         <div className="product-card-details">
           <h3>{product.name}</h3>
           <p>{product.description}</p>
+          <p>{product.extraDescription}</p>
+
           <h4>Rp {product.price.toFixed(3)}</h4>
         </div>
       </div>

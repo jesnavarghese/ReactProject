@@ -6,8 +6,7 @@ import { ProductList } from "./pages/ProductList";
 import "./App.css";
 import { DetailFooter } from "./Components/DetailFooter";
 import { ProductDetails } from "./Components/ProductDetails";
-import { CreateProduct } from "./Components/CreateProduct/CreateProduct";
-import { UpdateProduct } from "./Components/Updateproduct/Updateproduct";
+import { ProductForm } from "./Components/ProductForm/ProductForm";
 
 function App() {
   return (
@@ -19,8 +18,8 @@ function App() {
           <Routes>
             <Route path="/shop" element={<ProductList />} />
             <Route path="/product/:id" element={<ProductDetails />} />
-            <Route path="/create" element={<CreateProduct />} />
-            <Route path="/update/:id" element={<UpdateProduct />} />
+            <Route path="/create" element={<ProductForm />} />
+            <Route path="/update/:id" element={<ProductForm />} />
           </Routes>
         </main>
 
@@ -29,6 +28,6 @@ function App() {
       </div>
     </Router>
   );
-}
+};
 
 export default App;

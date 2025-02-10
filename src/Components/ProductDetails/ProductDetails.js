@@ -1,9 +1,8 @@
 import React, { useState, useEffect } from "react";
 import { useParams, useNavigate } from "react-router-dom";
-// import { products } from "../../data/Products/products";
 import "./ProductDetails.css";
 import axios from "axios";
-import { deleteProduct } from "../../apis/ProductService";
+import { deleteProduct } from "../../apis/ProductDeletion";
 
 export const ProductDetails = () => {
   const { id } = useParams();
@@ -22,7 +21,7 @@ export const ProductDetails = () => {
   }, []);
 
   if (!product) {
-    return <h2>Product not found!</h2>;
+    return <h2>Product not found!!</h2>;
   }
 
   // const handleBuyNow = () => {
@@ -60,17 +59,17 @@ export const ProductDetails = () => {
           alt={product.name}
         />
       ) : (
-        <div className="product-placeholder-box">
-          
-        </div>
+        <div className="product-placeholder-box"></div>
       )}
       <h2>{product.name}</h2>
       <p>{product.description}</p>
+      <p>{product.extraDescription}</p>
+
       <h4>Rp {product.price.toFixed(3)}</h4>
       <div className="service-buttons">
-      <button onClick={handleUpdate}>Edit</button>
-      <button onClick={handleDelete}>Delete</button>
-      {/* <button onClick={handleBuyNow}>Buy Now</button>
+        <button onClick={handleUpdate}>Edit</button>
+        <button onClick={handleDelete}>Delete</button>
+        {/* <button onClick={handleBuyNow}>Buy Now</button>
       <button onClick={handleAddToCart}>Add To Cart</button> */}
       </div>
     </div>

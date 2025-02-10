@@ -4,7 +4,7 @@
   border-radius: 1%;
   text-align: left;
   box-shadow: 0 2px 2px rgba(0, 0, 0, 0.1);
-  height: 400px;
+  height: 550px;
 
 }
 
@@ -35,7 +35,8 @@
 }
 
 .product-card .product-card-details {
-  padding: 10px;
+  padding: 15px;
+  min-height: 150px;
 }
 
 .product-card .placeholder-box {
@@ -43,5 +44,15 @@
   height: 65%;
   background-color: #ddd;
 }
+.product-card-details h3 {
+  margin-bottom: 2px;
+ }
+
+ .product-card-details p {
+  min-height: 10px;
+ }
 
 
+.product-card-details h4{
+  margin-top: auto;
+}
