@@ -1,0 +1,54 @@
+
+
+.admin-container {
+    border-radius: 1%;
+    text-align: center;
+    height: 550px;
+    padding: 30px;
+
+    
+  }
+  
+  .admin-title {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  
+  
+  
+  
+  
+  
+
+  
+  
+  .product-admin-image {
+    width: 100px;
+    height: 100px;
+  }
+
+  .admin-placeholder-box{
+    width: 100px;
+    height: 100px;
+    background: #ccc;
+    display: inline-block;
+    vertical-align: middle;
+  }
+
+  .admin-button {
+    display: flex;
+    justify-self: center;
+    gap: 10px;
+  }
+
+  .admin-button button {
+    background-color: green;
+    color: white;
+    border: none;
+    padding: 8px 14px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: bold;
+    
+  }

@@ -31,7 +31,6 @@ export const Header = () => {
         <IconList />
         <IconCart />
       </div>
-      <Link to="/create" className="create-button">Create Product</Link>
     </header>
   );
 };

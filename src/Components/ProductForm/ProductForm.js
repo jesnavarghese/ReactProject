@@ -57,7 +57,7 @@ export const ProductForm = () => {
         });
         alert("Product added successfully");
       }
-      navigate("/shop");
+      navigate("/admin");
     } catch (error) {
       console.error("Error saving product:", error);
       alert("Failed to add product.");
@@ -67,7 +67,7 @@ export const ProductForm = () => {
  
 
   const handleCancel = () => {
-    navigate("/shop");
+    navigate("/admin");
   };
 
   return (
@@ -132,7 +132,7 @@ export const ProductForm = () => {
 
         <div className="form-group">
         <label>Product Description</label>
-          <input
+          <textarea
             type="text"
             placeholder="product description"
             value={newproduct.description}
@@ -142,17 +142,7 @@ export const ProductForm = () => {
             required
           />
         </div>
-        <div className="form-group">
-          <input
-            type="text"
-            placeholder="product description"
-            value={newproduct.extraDescription}
-            onChange={(e) =>
-              setNewproduct({ ...newproduct, extraDescription: e.target.value })
-            }
-           
-          />
-        </div>
+        
         <div className="createproduct-button">
           {!isUpdating && <button type="submit">Create</button>}
 
