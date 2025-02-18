@@ -3,7 +3,7 @@ import { useNavigate } from "react-router-dom";
 import "./AdminPage.css";
 import axios from "axios";
 import { deleteProduct } from "../apis/ProductDeletion";
-import { Table ,Button, Image    } from "antd";
+import { Table ,Button} from "antd";
 
 export const AdminPage = () => {
   const navigate = useNavigate();
@@ -81,7 +81,7 @@ export const AdminPage = () => {
       title: "Price",
       dataIndex: "price",
       key: "price",
-      render: (price) => `$${price.toFixed(3)}`,
+      render: (price) => `$${price.toFixed(2)}`,
     },
     {
       title: "Rating",

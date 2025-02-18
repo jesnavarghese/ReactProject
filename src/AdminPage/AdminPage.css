@@ -22,18 +22,18 @@
 
   
   
-  .product-admin-image {
+  /* .product-admin-image {
     width: 100px;
     height: 100px;
-  }
+  } */
 
-  .admin-placeholder-box{
+  /* .admin-placeholder-box{
     width: 100px;
     height: 100px;
     background: #ccc;
     display: inline-block;
     vertical-align: middle;
-  }
+  } */
 
   .admin-button {
     display: flex;

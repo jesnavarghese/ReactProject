@@ -15,10 +15,10 @@
    .product-detailed-image  {
     width: 350px;
     height: auto;
-    border-radius: 10px;
     object-fit: cover;
     display: flex;
     flex-direction: column;
+    border-radius: 10px;
     
     
   }  
@@ -30,9 +30,7 @@
   border-radius: 10px;
 }
 
-/* .service-buttons {
-  display: flex;
-} */
+
 
 .product-info {
   flex-direction: column;

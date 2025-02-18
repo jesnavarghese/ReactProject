@@ -14,7 +14,6 @@ export const ProductForm = () => {
     image: "",
     rating: "",
     description: "",
-    extraDescription: "",
   });
 
   const [showUpdateButtons, setShowUpdateButtons] = useState(false);
